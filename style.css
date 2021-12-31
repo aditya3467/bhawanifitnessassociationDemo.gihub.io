@@ -1,0 +1,741 @@
+
+    /* variables */
+    :root {
+        --bodyheading: 'Bebas Neue', cursive;
+        --bodytext: sans-serif;
+        --navBarColor: black;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+
+    }
+     
+    /* ******************HOME *********************/
+    
+
+    /* ********************navigation Bar ********************** */
+    #navBar {
+        font-size: 1.1rem;
+        display: flex;
+        position: sticky;
+        top: 0px;
+        /* border: 2px solid red; */
+        height: 4.5rem;
+        background-color: var(--navBarColor);
+        align-items: center;
+        z-index: 1;
+        opacity: 0.92;
+    }
+    
+
+    
+
+    .logo {
+        display: block;
+        background: url('./logo2.png') no-repeat center center/cover ;
+        border-radius: 100%;
+        margin: 12px 20px;
+        margin-top: 75px;
+        height: 8rem;
+        width: 8rem;
+        /* width: 25%; */
+        z-index: 1;
+    }
+     .logo img{
+         border-radius: 100%;
+
+     }
+
+
+    /*** Menu COntents ***/
+    #navBar ul {
+        width: 75%;
+        margin: 12px 48px;
+        display: flex;
+    }
+
+    #navBar li {
+        border-radius: 8px;
+        display: block;
+       /* height: 50px; */
+       padding: 10px;
+       justify-content: center;
+        text-align: center;
+        list-style: none;
+        color: white;
+        transition: all 1s;
+    }
+    /* .clr {
+        display: none;
+       content: "";
+       /* width: 40px; */
+       /* height: 1.6rem;
+       background-color: rgb(80, 133, 80);
+       border: red solid 2px;
+       transition: all 1s;
+       /* transition-duration: 1s; */
+    /* }  */
+    #navBar li:hover {
+        background-color: rgb(80, 133, 80);
+        
+
+        transform:translateY(-12px);
+        
+       
+        /* color: white; */
+    }
+    .active{
+        background-color: red;
+    }
+    #navBar li:active{
+        /* text-decoration: underline; */
+        background-color: rgb(80, 133, 80);
+        
+        
+        /* transform:translateY(-12px); */
+        
+       
+        /* color: white; */
+    }
+    
+    
+
+    .menuItems {
+        color: white;
+        margin: 0px 18px;
+        padding: 2px 2px;
+    }
+
+    #navBar .trans a {
+        width: 60px;
+        height: 80px;
+        text-decoration: none;
+        transition: all 1s ;
+    }
+   
+
+/******************************* Dropdown container **************/
+    .dropdown .dropbtn {
+        font-size: 1.1rem;
+        border: none;
+        
+        color: white;
+        /* padding: 14px 16px; */
+        background-color:transparent;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+    
+      
+      .dropdown {
+        padding: 20px;
+        display: flex;
+        transition: all 1s;
+        /* overflow: hidden; */
+      }
+      .dropdown-content a{
+          font-size: 1rem;
+          padding: 4px;
+          margin-top: 0.7rem;
+      }
+
+      .dropdown-content {
+          transition: ease-in;
+        font-size: 1rem;
+        display: none;
+        position: absolute;
+        background-color: white;
+        opacity: 0.9;
+        margin-top: 11px;
+        height: 13rem;
+        width: 10rem;
+        /* min-width: 160px; */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center;
+
+        
+      }
+      @keyframes growDown {
+        0% {
+          transform: scaleY(0)
+        }
+        80% {
+          transform: scaleY(1.1)
+        }
+        100% {
+          transform: scaleY(1)
+        }
+      }
+
+      
+      .dropdown-content a {
+          text-align: center;
+          font-size: 1rem;
+        float: none;
+        color: black;
+        /* padding: 12px 16px; */
+        text-decoration: none;
+        padding-top: 15px;
+        opacity: 2;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+       
+        
+        /* height: 90px; */
+      }
+      .dropdown-content a:hover{
+        background-color: rgb(190, 184, 184);
+      }
+
+
+
+    /*********************** BODY**************************/
+    /* .Intro::before {
+        content: "";
+        background: url("girlwithropes.jpg") no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    z-index: -1;
+
+    }
+     */
+
+    .Intro {
+        display: flex;
+        flex-direction: column;
+        height: 44rem;
+        background: url("./bg2.jpg") no-repeat center center/cover;
+        opacity: 0.8;
+        align-items: center;
+       
+        font-weight: bolder;
+    }
+
+    .quote1 {
+        color: white;
+        font-family: 'Abril Fatface', cursive;
+        margin-top: 30px;
+        font-size: 32px;
+    }
+
+    .quote2 {
+        color: white;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 88px;
+    }
+
+    .circle1{
+        border: 2px solid black;
+        height: 14rem;
+        width: 14rem;
+        border-radius: 100%;
+        background-color:  rgba(237,241,242,0.6);
+
+    }
+    .circle1 p{
+        font-size: 1.2rem;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .circle2 p{
+        font-size: 1.2rem;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .circle3 p{
+        font-size: 1.2rem;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-weight: bolder;
+    }
+    #box2{
+        font-family: 'Bitter', serif;
+        display: flex;
+    }
+    .circle2{
+        
+        margin-top: 40px;
+        margin-right: 40px;
+        border: 2px solid black;
+        height: 14rem;
+        width: 14rem;
+        border-radius: 100%;
+        background-color:  rgba(237,241,242,0.6);
+
+    }
+    .circle3{
+        margin-top: 40px;
+        margin-left: 40px;
+        border: 2px solid black;
+        height: 14rem;
+        width: 14rem;
+        border-radius: 100%;
+        background-color:  rgba(237,241,242,0.6);
+        z-index: 1;
+
+    }
+   
+    #phrase{
+        color: white;
+        font-family: 'Pacifico', cursive;
+        display: block;
+        min-width: 80px;
+        /* width: 90px; */
+        margin-top: 2rem;
+        align-items: center;
+        font-size: 22px;
+    }
+    .circle1 img{
+        display: block;
+        width: 9rem ;
+        margin: auto;
+        height: 9rem;
+        align-items: center;
+        border-radius: 100%;
+
+        /* z-index: -1; */
+
+        
+    }
+    .circle2 img{
+        display: block;
+        width: 9rem ;
+        margin: auto;
+        height: 9rem;
+        align-items: center;
+        border-radius: 100%;
+
+        
+    }
+    .circle3 img{
+        display: block;
+        width: 9rem ;
+        margin: auto;
+        height: 9rem;
+        align-items: center;
+        border-radius: 100%;
+
+        
+    }
+
+
+    .content1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        height: 15rem;
+        width: 100%;
+    }
+    /* .content1::before{
+        content: " ";
+        background: url("./girlwithropes.jpg");
+        display: absolute;
+        height: 100%;
+        z-index: -1;
+    } */
+
+    .content1 #join1{
+        font-family: 'Anton', sans-serif;
+        font-size: 4rem;
+    }
+    .content1 #join1 span{
+        font-family: 'Anton', sans-serif;
+        font-size: 4rem;
+        color: rgb(32, 32, 32);
+    }
+    #join2{
+        /* background: url("./girlwithropes.jpg") no-repeat center center/cover; */
+        width: 100%;
+        font-size: 2.6rem;
+        height: 44rem;
+        color: white;
+        /* opacity: 0.8; */
+    }
+    
+    #join2::before{
+        content: "";
+        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url("./gym7.jpg") no-repeat center center/cover;
+        position: absolute;
+        z-index: -1;
+        height: 700px;
+        width: 100%;
+        opacity: 0.85;
+
+    }
+    #join2 div{
+        
+        
+        
+        text-align: center;
+    }
+    .join2{
+        padding-left: 790px;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 64px;
+    }
+
+    #join3{
+        color: #1CB0E6;
+        padding-left: 790px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 4.8rem;
+    }
+     .introFit{
+         margin-top: 20px;
+        padding-left: 590px;
+         margin-left: 250px;
+         margin-right: 50px;
+         font-size: 1.5rem;
+         font-family:  sans-serif;
+     }
+     #joinBtn{
+         padding-top: 50px;
+         padding-left: 740px;
+     }
+
+     #join2 button{
+         background-color: #1CB0E6;
+         border-radius: 18px;
+         width: 120px;
+         height: 2.6rem;
+         border: none;
+         box-shadow: 2px;
+         cursor: pointer;
+         
+     }
+     #join2 button a{
+         color: black;
+         cursor: pointer;
+         text-decoration: none;
+         font-size: 0.9rem;
+     }
+     #joinBtn button:hover a{
+         color: #1CB0E6;
+         
+     }
+
+     #joinBtn button:hover{
+         border: 2px solid #1CB0E6;
+         color:#1CB0E6 ;
+         background-color: transparent;
+     }
+
+
+
+     /* content2 */
+
+     .content2{
+         height: 50rem;
+     }
+
+     .content2 .head{
+         font-size: 50px;
+         font-family: 'Anton', sans-serif;
+         text-align: center;
+     }
+     .content2 div{
+         width: 60%;
+         display: block;
+
+         margin: 40px auto;
+         font-family: var(--bodytext);
+         font-size: 18px;
+         /* margin: 14px; */
+         /* margin-bottom: 50px; */
+         /* margin-left: 30px; */
+         /* padding-right: 250px; */
+         /* padding-left: 250px; */
+         text-align: center;
+         line-height: 34px;
+         /* font-family: 'Bebas Neue', cursive; */
+     }
+
+
+     .content3{
+         width: 100%;
+         height: 1900px;
+         /* background: url(./bg11.jpg) center ; */
+         
+     }
+
+     .content3 .head{
+         margin-top: 36px;
+         color: white;
+         font-family: var(--bodyheading);
+         font-size: 48px;
+         text-align: left;
+     }
+     .content3 .body-content3{
+         color: white;
+         font-family: var(--bodytext);
+         line-height: 30px;
+         font-size: 17px;
+
+     }
+     .content3::before{
+            content: "";
+            background: url("./bg11.jpg") no-repeat center center/cover;
+            position: absolute;
+            z-index: -1;
+            height: 700px;
+            width: 100%;
+            opacity: 0.85;
+     }
+
+     .display{
+         margin-left: 10.4rem;
+        /* border: 2px solid red; */
+         height: 450px;
+         width: 500px;
+     }
+
+     .display1{
+         display: flex;
+         /* border: 2px solid red; */
+         width: 80%;
+         height: 900px;
+         margin: auto;
+     }
+     .display2{
+         display: flex;
+         /* border: 2px solid red; */
+         width: 80%;
+         height: 900px;
+         margin-top: 80px;
+         margin-left: 168px;
+     }
+
+     .im1{
+         box-shadow: 0 0 24px 1px rgb(36, 36, 36);
+         display: flex;
+         flex-direction: column;
+         background-color: #fff;
+         /* margin: 40px; */
+         display: flex;
+         margin-right: 10px;
+         /* border: 2px solid red; */
+    width: 50%; 
+    height: 800px;
+    }
+
+    .img1{
+        box-shadow: 0 0 20px 2px black;
+        /* z-index: 2; */
+        display: block;
+        background: url("./boxing1.jpg") no-repeat center/cover;
+        margin: 48px auto;
+        width: 35rem;
+        
+        height: 25rem;
+    }
+    .context1{
+        display: block;
+        height: 50%;
+        width:100%
+    }
+    .head-con{
+        /* text-shadow: 2px 2px 10px 10px red; */
+        text-shadow: 1px 1px 20px  rgb(61, 60, 60);
+        font-family: var(--bodyheading);
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .context1-body{
+        text-transform: uppercase;
+        font-family: var(--bodytext);
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 45px;
+    }
+    .context1-body p{
+        font-weight: bold;
+    }
+    .im2{
+        box-shadow: 0 0 24px 1px rgb(36, 36, 36);
+        display: flex;
+        flex-direction: column;
+         background-color: white;
+         margin-left: 10px;
+         /* margin: 40px; */
+         display: flex;
+         
+    width: 50%; 
+    height: 800px;
+    }
+    .img2{
+        box-shadow: 0 0 20px 2px black;
+        /* z-index: 2; */
+        display: block;
+        background: url("./weightloss.jpg") no-repeat center center/cover;
+        margin: 48px auto;
+        width: 35rem;
+        
+        height: 25rem;
+    }
+
+    .img3{
+        box-shadow: 0 0 20px 2px black;
+        /* z-index: 2; */
+        display: block;
+        background: url("./bodyb.jpg") no-repeat center center/cover;
+        margin: 48px auto;
+        width: 35rem;
+        
+        height: 25rem;
+    }
+    .img4{
+        box-shadow: 0 0 20px 2px black;
+        /* z-index: 2; */
+        display: block;
+        background: url("./diet.jpg") no-repeat center center/cover;
+        margin: 48px auto;
+        width: 35rem;
+        
+        height: 25rem;
+    }
+
+ .content3-2{
+        height: 26rem;
+        /* border: 2px solid red; */
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+    /* content4 */
+
+   
+    .content4{
+        height: 58rem;
+    }
+    .transform{
+        display: flex;
+        align-items: center;
+        margin: 32px;
+    }
+    .t-head{
+        text-align: center;
+        font-family: var(--bodyheading);
+        font-size: 6rem;
+    }
+    .tran1{
+        box-shadow: 0 0 20px 2px black;
+        /* z-index: 2; */
+        display: block;
+        background: url("./bhwani1.jpg") no-repeat center center/cover;
+        margin: 30px auto;
+        width: 35rem;
+        
+        height: 40rem;
+    }
+    .tran2{
+        box-shadow: 0 0 20px 2px black;
+        /* z-index: 2; */
+        display: block;
+        background: url("./bhawani3.jpg") no-repeat center center/cover;
+        margin: 30px auto;
+        width: 35rem;
+        
+        height: 40rem;
+    }
+
+
+.content5{
+    background-color: black;
+    color: white;
+    height: 40rem;
+}
+.head{
+    padding-top: 40px;
+    font-size: 6rem;
+    font-family: var(--bodyheading);
+    text-align: center;
+}
+.content5-body-1{
+    font-size: 18px;
+    font-family: var(--bodytext);
+
+    width: 70%;
+    display: block;
+    
+    line-height: 34px;
+    margin: 40px auto;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    height: 18rem;
+}
+
+.cat{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cat1{
+    margin-top: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+.contHead{
+    font-size: 18px;
+    font-family: var(--bodytext);
+    font-weight: bold;
+}
+.cat1 .list{
+    font-family: var(--bodytext);
+    margin-top: 16px;
+}
+.line{
+    margin: 20px auto;
+    width: 73%;
+    /* height: 2px; */
+    border: 0.5px dotted rgb(66, 65, 65);
+}
+.foot-cont{
+    display: flex;
+}
+footer .name{
+    width: 50%;
+    margin-right: 220px;
+    text-align: right;
+}
+.copy{
+    width: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 270px;
+}
+
+    
+    
